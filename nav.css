@@ -7,22 +7,24 @@
 .nav ul{
     float: top;
     text-align: center;
+    
 }
 .nav ul li{
     display: inline-block;
     list-style: none;
-    padding: 10px 60px;
-    margin: 0px auto;
-     
+    padding: 10px 10px;
+    /* margin: 0px auto; */
+    margin: 5px 20px 5px 20px;
+      
 }
 .nav a{
     color: #757575;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 800;
 }
 .logobutton img[src="logo.jpg"]{
     display: block;
-    width: 13%;
+    width: 150px;
     float: top;
     text-align: center;
     margin: 0px auto;

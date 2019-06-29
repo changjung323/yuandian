@@ -1,9 +1,3 @@
-
-mixin Title(title, content)
-    .title
-        h1=title
-        p=content
-
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -13,29 +7,43 @@ html(lang="zh")
     body
     .main
         include nav.pug
-        
+        .box1
+            .box-inn 
+                a(href="#") #[img(src="logo.jpg" alt="")]
+        .box2
+            .box-inn
+                a(href="brand.html") #[img(src="logo.jpg" alt="品牌故事")]
+                a(href="news.html") #[img(src="logo.jpg" alt="最新資訊")]
+                a(href="story.html") #[img(src="logo.jpg" alt="小農故事")]    
+        .box3
+            .box-inn 
+                a(href="share.html") #[img(src="logo.jpg" alt="風味分享")]
+                a(href="shop.html") #[img(src="logo.jpg" alt="線上訂購")]
+     
 
     .footer
         .footerBox
             .smallBox
-                    h3 快速連結
-                    ul
-                        li #[a(href="#") 首頁]
-                        li #[a(href="#") 品牌故事]
-                        li #[a(href="#") 最新資訊]
-                        li #[a(href="#") 風味分享]
-                        li #[a(href="#") 線上訂購]
+                h3 快速連結
+                ul
+                    li #[a(href="index.html") 首頁]
+                    li #[a(href="brand.html") 品牌故事]
+                    li #[a(href="news.html") 最新資訊]
+                    li #[a(href="share.html") 風味分享]
+                    li #[a(href="shop.html") 線上訂購]
             .smallBox
-                    h3 追蹤我們
-                    a(href="#") #[img(src="icon-fb.png", alt="facebook")]
-                    a(href="#") #[img(src="icon-ig.png", alt="instagram")]
-                    a(href="#") #[img(src="icon-yt.png", alt="youtube")]
+                h3 追蹤我們
+                a(href="#") #[img(src="icon-fb.png", alt="facebook")]
+                a(href="#") #[img(src="icon-ig.png", alt="instagram")]
+                a(href="#") #[img(src="icon-yt.png", alt="youtube")]
             .smallBox
-                    h3 聯絡方式
-                    h4 電話：
-                    h4 e-mail：
-                    h4 地址：
-                    
+                h3 聯絡方式
+                h4 電話
+                p 04-12345678
+                h4 e-mail
+                p @.com
+                h4 地址
+                p (400)台中市        
         hr
         .copyright 原點小農 &copy; 2019
 
