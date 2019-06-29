@@ -1,10 +1,37 @@
+mixin CreateBox(imgName, title, content)
+    .box(data-aos="fade" data-aos-duration="3000" data-aos-delay="1000")
+        .picture
+            img(src=imgName)
+        .content
+            h1=title
+            p=content
+                   
+           
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         title 原點小農
-        link(rel="stylesheet", href="index.css")
+        link(rel="stylesheet", href="brand.css")
     body
     .main
         include nav.pug
+        .box1(data-aos="fade" data-aos-duration="3000" data-aos-delay="1000")
+            .box-inn
+                img(src="brand.jpg" alt="產品故事")
+                h2 原點小農的起源
+                p 二十一世紀是一個很不一樣的年代，過去的方法到了今天，就再也不管用，唯有透過全新的方法，才有辦法，創造出全新的農業價值觀。
+                p 原點小農尋找台灣各地手工、真實、友善的產品，我們使命是替下一代選出友善環境的產品，協助優質的商家推廣好產品，農業觀念之導正，及找到有國際觀與價值觀的客群，建立一個消費者與小農間的友善平台，讓下一代吃得安心，用得安心。
+        .box2(data-aos="fade" data-aos-duration="3000" data-aos-delay="1000")
+            .box-inn
+                img(src="brand2.jpg" alt="產品故事")
+            .box-content
+                p 食安問題我們無法逃避，但我們的健康可以自己選擇，不被品牌與價格綁架，幫助台灣農業，友善土地，原點小農尋找農友一塊一塊拼起台灣在地好商品的拼圖。 
+                ul 我們能做的事情 :
+                    li 一. 建立小農與消費者間的友善平台
+                    li 二. 協助小農和優質商家推廣好產品
+                    li 三. 讓消費者重新找回食物的原貌
+                    li 四. 分享農業價值觀 落實給予下一代
+            
+
         

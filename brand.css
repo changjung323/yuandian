@@ -1,0 +1,53 @@
+*{
+    /* border: 0.5px solid black; */
+    font-family: 微軟正黑體;
+}
+.main{
+    width: 80%;
+    margin:0 auto;
+}
+/* 字體 */
+.main p, ul{
+    font-size: 20px;
+}
+/* 盒子 - 圖片、標題、內文 */
+.box1{
+    text-align: center;
+    margin: 0 auto;
+}
+.box1 .box-inn{
+    margin: 0 auto;
+}
+.box1 img[src="brand.jpg"]{
+    width: 85%;
+    margin: 10px 20px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5)
+}
+.box1 h2, p {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.box2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px 10px;
+}
+.box2 .box-inn{
+    margin: 30px auto;
+}
+.box2 img[src="brand2.jpg"]{
+    width: 90%;
+    margin: 30px 10px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5)
+}
+.box2 .box-content {
+    text-align: left;
+    margin-top: 30px;
+}
+.box2 ul {
+    list-style: none;
+    margin-top: 10px;
+
+}
+
